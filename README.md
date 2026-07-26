@@ -1,4 +1,3 @@
-# credit-card-fraud-detection
 # Credit Card Fraud Detection — IEEE-CIS
 
 End-to-end fraud detection on the [IEEE-CIS Fraud Detection](https://www.kaggle.com/competitions/ieee-fraud-detection) dataset (~590K transactions, 27:1 class imbalance). The project builds and compares three model families on a **leakage-safe, time-aware evaluation setup**, then translates model scores into operational decisions under realistic review-capacity constraints.
