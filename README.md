@@ -39,9 +39,9 @@ unzip data/ieee-fraud-detection.zip -d data/
 | **Amount is weak alone** | Fraud/legit amount distributions overlap heavily; useful only in combination |
 | **Strong time structure** | Fraud rate swings ~4.5x by hour — driven by legitimate traffic collapsing overnight while fraud stays roughly constant |
 
-<!-- Suggested images to add:
-     - fraud_rate_by_hour.png  (dual-axis: fraud rate vs transaction volume)
-     - shap_summary.png        (beeswarm) -->
+![Fraud rate by hour: fraud rate spikes overnight as legitimate volume collapses](images/fraud_rate_by_hour.png)
+
+![SHAP feature importance — top drivers of the XGBoost model](images/shap_summary.png)
 
 The hour finding is worth highlighting: fraud rate peaks not because fraud surges overnight, but because honest users are asleep, so the same volume of fraud becomes a much larger *share*.
 
